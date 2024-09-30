@@ -1,0 +1,8 @@
+// Function to display the available locations
+void displayLocations() {
+    printf("Available locations:\n");
+    printf("1. Davanagere\n");
+    printf("2. Gokak\n");
+    printf("3. Bengaluru\n");
+    printf("4. Mysuru\n");
+}

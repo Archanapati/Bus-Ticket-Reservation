@@ -1,0 +1,13 @@
+// Function to view the available seats
+void viewSeats(int seats[], int userIDs[]) {
+    int i;
+
+    printf("\nSeat Availability:\n");
+    for (i = 0; i < MAX_SEATS; i++) {
+        if (seats[i] == 0) {
+            printf("Seat %d: Available\n", i + 1);
+        } else {
+            printf("Seat %d: Reserved for location %d by User ID %d\n", i + 1, seats[i], userIDs[i]);
+        }
+    }
+}

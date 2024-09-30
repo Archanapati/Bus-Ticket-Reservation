@@ -1,0 +1,19 @@
+
+// Function to reserve a seat
+void reserveSeat(int userId, int location, int seats[], int userIDs[]) {
+    int i, reserved = 0;
+
+    for (i = 0; i < MAX_SEATS; i++) {
+        if (seats[i] == 0) { // Find an empty seat
+            seats[i] = location;   // Reserve seat for the selected location
+            userIDs[i] = userId;   // Store the user's ID
+            printf("Seat reserved successfully for User ID %d at seat %d to location %d.\n", userId, i+1, location);
+            reserved = 1;
+            break;
+        }
+    }
+
+    if (!reserved) {
+        printf("Sorry, no seats available.\n");
+    }
+}

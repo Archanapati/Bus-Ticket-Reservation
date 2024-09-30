@@ -1,0 +1,36 @@
+
+    while (1) {
+        printf("\n1. Reserve Seat\n");
+        printf("2. View Available Seats\n");
+        printf("3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter your User ID (numeric): ");
+                scanf("%d", &userId);
+                displayLocations();
+                printf("Select your destination (1-4): ");
+                scanf("%d", &location);
+                if (location < 1 || location > LOCATIONS) {
+                    printf("Invalid location selected!\n");
+                } else {
+                    reserveSeat(userId, location, seats, userIDs);
+                }
+                break;
+
+            case 2:
+                viewSeats(seats, userIDs);
+                break;
+
+            case 3:
+                printf("Thank you for using the Bus Ticket Reservation System!\n");
+                return 0;
+
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+    }
+    return 0;
+}
