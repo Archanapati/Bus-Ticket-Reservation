@@ -1,0 +1,1 @@
+Bus ticket reservation is the process of booking a seat on a bus for a specific journey, typically done in advance to ensure availability and preferred seating. The process can be completed online, via mobile apps, or in person at a bus station. During reservation, the passenger selects the destination, and may also choose their seat from available options.
